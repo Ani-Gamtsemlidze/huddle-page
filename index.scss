@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    .header-logo{
+        width: 100%;
+        max-width: 200px;
+    }
+    .button{
+        font-size: 16px;
+        line-height: 22px;
+        border: 1px solid #FF52C1;
+        color: #FF52C1;
+        border-radius: 20px;
+        box-shadow: 0px 0px 9px rgba(255, 82, 193, 0.218778);
+        padding: 9px 30px;
+        text-decoration: none;
+        transition: 0.5s;
+        &:hover{
+            border: 1px solid #FF8ED7;
+            color: #FF8ED7;
+        }
+    }
+
+}
