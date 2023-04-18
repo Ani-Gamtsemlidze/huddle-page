@@ -2,8 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans";
 }
 
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("./fonts/Poppins-Bold.woff2") format("woff2"), url("./fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("./fonts/OpenSans-Regular.woff2") format("woff2"), url("./fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -27,4 +42,46 @@ header .button {
 header .button:hover {
   border: 1px solid #FF8ED7;
   color: #FF8ED7;
+}
+
+.huddle-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 88px;
+}
+.huddle-text-box h1 {
+  font-size: 35px;
+  line-height: 72px;
+  font-family: "Poppins-bold";
+  color: #00252E;
+}
+.huddle-text-box .huddle-paragraph {
+  max-width: 600px;
+  width: 100%;
+}
+.huddle-text-box .huddle-paragraph p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #00252E;
+  text-align: center;
+  margin-top: 26px;
+}
+.huddle-text-box .start-button {
+  font-size: 20px;
+  line-height: 30px;
+  background-color: #FF52C1;
+  color: #fff;
+  font-weight: 700;
+  padding: 25px 100px;
+  text-decoration: none;
+  border-radius: 40px;
+  margin-top: 49px;
+  box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.2);
+  transition: 0.5s;
+}
+.huddle-text-box .start-button:hover {
+  background-color: rgb(255, 142, 215);
+  color: #00252E;
+  transform: translateY(-2px);
 }/*# sourceMappingURL=index.css.map */
