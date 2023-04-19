@@ -27,10 +27,14 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 50px 30px;
+  align-items: center;
 }
 header .header-logo {
   width: 100%;
   max-width: 150px;
+}
+header .header-logo img {
+  width: 100%;
 }
 header .button {
   font-size: 16px;
@@ -63,13 +67,13 @@ header .button:hover {
 .huddle-text-box .huddle-paragraph {
   max-width: 600px;
   width: 100%;
+  margin-top: 22px;
 }
 .huddle-text-box .huddle-paragraph p {
   font-size: 20px;
   line-height: 30px;
   color: #00252E;
   text-align: center;
-  margin-top: 22px;
 }
 .huddle-text-box .start-button {
   font-size: 20px;
@@ -86,7 +90,6 @@ header .button:hover {
 }
 .huddle-text-box .start-button:hover {
   background-color: rgb(255, 142, 215);
-  color: #00252E;
   transform: translateY(-2px);
 }
 
@@ -94,12 +97,14 @@ header .button:hover {
   margin-top: 100px;
 }
 .second-page .image-box {
-  max-width: 900px;
+  max-width: 700px;
   width: 100%;
   margin: 0 auto;
+  height: 600px;
 }
 .second-page .image-box img {
   width: 100%;
+  height: 100%;
 }
 
 .diagram-box {
@@ -112,8 +117,14 @@ header .button:hover {
   flex-direction: column;
   justify-content: center;
 }
-.diagram-box .community-diagram img {
-  width: 25%;
+.diagram-box .community-diagram .icon-diagram {
+  max-width: 55px;
+  width: 100%;
+  height: 41px;
+}
+.diagram-box .community-diagram .icon-diagram img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -139,10 +150,6 @@ header .button:hover {
   justify-content: space-evenly;
 }
 
-.grow-text-box img {
-  max-width: 350px;
-  width: 100%;
-}
 .grow-text-box h3 {
   color: #00252E;
   font-size: 40px;
@@ -151,11 +158,21 @@ header .button:hover {
 .grow-text-box .grow-paragraph {
   max-width: 500px;
   width: 100%;
+  margin-top: 15px;
 }
 .grow-text-box .grow-paragraph p {
   font-size: 16px;
   color: #00252E;
   line-height: 24px;
+}
+
+.grow-image {
+  max-width: 517px;
+  height: 423px;
+}
+.grow-image img {
+  width: 100%;
+  height: 100%;
 }
 
 .conversation-together-page {
@@ -220,6 +237,163 @@ header .button:hover {
 }
 .build-free .start-button:hover {
   background-color: rgb(255, 142, 215);
-  color: #00252E;
   transform: translateY(-2px);
+}
+
+footer {
+  background-image: url(./images/Path\ 4.png);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  background-position: top;
+  padding: 12% 0 3%;
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 150px;
+}
+.footer-logo img {
+  width: 100%;
+}
+
+.info-paragraph {
+  max-width: 340px;
+  width: 100%;
+  margin-top: 18px;
+}
+.info-paragraph p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.contact-info span {
+  font-size: 16px;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.phone-box {
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon {
+  max-width: 20px;
+  width: 100%;
+  height: 20px;
+}
+.phone-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.email-box {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.email-icon {
+  max-width: 20px;
+  width: 100%;
+}
+.email-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.social-networks {
+  display: flex;
+}
+.social-networks .network-img {
+  margin: 40px 20px 0 0;
+  max-width: 30px;
+  width: 100%;
+}
+.social-networks .network-img img {
+  width: 100%;
+}
+
+.newsletter-box h2 {
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Poppins-bold";
+}
+
+.newsletter-paragraph {
+  max-width: 344px;
+  width: 100%;
+  margin-top: 16px;
+}
+.newsletter-paragraph p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.subscribe-box {
+  margin-top: 40px;
+  display: flex;
+}
+
+.input-email #email {
+  outline: none;
+  border: unset;
+  width: 320px;
+  height: 48px;
+  border-radius: 6px;
+  color: #00252E;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.input-email #error {
+  margin-top: 2px;
+}
+.input-email #error span {
+  color: #FF4343;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.subscribe-bottom {
+  max-width: 160px;
+  width: 100%;
+  height: 48px;
+}
+.subscribe-bottom #submit-click {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  height: 100%;
+  padding: 12px 41px;
+  margin-left: 33px;
+  color: #fff;
+  background-color: #FF52C1;
+  border: unset;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.subscribe-bottom #submit-click:hover {
+  cursor: pointer;
+  background-color: #FF8ED7;
 }/*# sourceMappingURL=index.css.map */
