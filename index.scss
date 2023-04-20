@@ -259,7 +259,7 @@ footer{
 .footer-container{
     display: flex;
     justify-content: space-around;
-    background-position: top;
+    
     padding: 12% 0 3%;
   
 }
@@ -547,6 +547,7 @@ footer{
     }
     footer{
         background-image: url(./images/Path\ 4\ Copy.png);
+        background-size: cover;
     }
     .footer-container{    
     flex-direction: column-reverse;
