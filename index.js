@@ -7,6 +7,12 @@ const validateEmail= (email) => {
     return regex.test(String(email).toLowerCase());
 }
 
+addEventListener('keydown', function(){
+
+    if(email.value === "") {
+        document.querySelector("#error").style.display="none"
+    } 
+})
 document.querySelector("#error").style.display="none"
 submitButton.addEventListener("click", (event) => {
     event.preventDefault();
@@ -18,4 +24,14 @@ submitButton.addEventListener("click", (event) => {
         
     }
 })
+
+const socialLinks = document.querySelectorAll(".social");
+
+socialLinks.forEach(link => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+  });
+});
+
+
 

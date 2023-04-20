@@ -57,6 +57,7 @@ header .button:hover {
   flex-direction: column;
   align-items: center;
   padding-top: 70px;
+  text-align: center;
 }
 .huddle-text-box h1 {
   font-size: 35px;
@@ -75,6 +76,9 @@ header .button:hover {
   color: #00252E;
   text-align: center;
 }
+.huddle-text-box .free-button {
+  margin-top: 44px;
+}
 .huddle-text-box .start-button {
   font-size: 20px;
   line-height: 30px;
@@ -84,7 +88,6 @@ header .button:hover {
   padding: 25px 100px;
   text-decoration: none;
   border-radius: 40px;
-  margin-top: 44px;
   box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.2);
   transition: 0.5s;
 }
@@ -105,6 +108,8 @@ header .button:hover {
 .second-page .image-box img {
   width: 100%;
   height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .diagram-box {
@@ -173,6 +178,8 @@ header .button:hover {
 .grow-image img {
   width: 100%;
   height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .conversation-together-page {
@@ -324,7 +331,7 @@ footer {
   max-width: 30px;
   width: 100%;
 }
-.social-networks .network-img img {
+.social-networks .network-img .social {
   width: 100%;
 }
 
@@ -378,6 +385,7 @@ footer {
   max-width: 160px;
   width: 100%;
   height: 48px;
+  margin-left: 33px;
 }
 .subscribe-bottom #submit-click {
   font-weight: 700;
@@ -386,7 +394,6 @@ footer {
   width: 100%;
   height: 100%;
   padding: 12px 41px;
-  margin-left: 33px;
   color: #fff;
   background-color: #FF52C1;
   border: unset;
@@ -396,4 +403,108 @@ footer {
 .subscribe-bottom #submit-click:hover {
   cursor: pointer;
   background-color: #FF8ED7;
+}
+
+@media only screen and (max-width: 992px) {
+  header .header-logo {
+    max-width: 96px;
+    width: 100%;
+  }
+  header .header-logo img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header .button {
+    padding: 5px 18px;
+    font-size: 10px;
+  }
+  .huddle-text-box h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .huddle-text-box .huddle-paragraph {
+    max-width: 296px;
+  }
+  .huddle-text-box .huddle-paragraph p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .huddle-text-box .start-button {
+    font-size: 12px;
+    padding: 11px 40px;
+  }
+  .diagram-box {
+    flex-direction: column;
+  }
+  .grow-together-page {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .grow-image {
+    max-width: 517px;
+    height: 423px;
+    display: flex;
+    justify-content: center;
+  }
+  .grow-image img {
+    width: 85%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .grow-text-box {
+    text-align: center;
+  }
+  .grow-text-box h3 {
+    font-size: 25px;
+  }
+  .grow-text-box .grow-paragraph {
+    max-width: 320px;
+  }
+  .grow-text-box .grow-paragraph p {
+    font-size: 14px;
+  }
+  .conversation-together-page {
+    flex-direction: column-reverse;
+  }
+  .users-page {
+    flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .subscribe-box {
+    flex-direction: column;
+  }
+  .input-email #email {
+    width: unset;
+  }
+  .second-page {
+    margin-top: 100px;
+  }
+  .second-page .image-box {
+    height: unset;
+  }
+  .second-page .image-box img {
+    width: 95%;
+    height: 75%;
+  }
+  .diagram-box .community-diagram {
+    padding: 47px 0;
+  }
+  .diagram-box .community-diagram p {
+    font-size: 18px;
+  }
+  .diagram-box .community-diagram span {
+    font-size: 60px;
+  }
+  .build-free h1 {
+    font-size: 24px;
+  }
+  .build-free .start-button {
+    padding: 11px 40px;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=index.css.map */
