@@ -286,10 +286,12 @@ footer{
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+   
     span{
         font-size: 16px;
         color: #fff;
         margin-left: 20px;
+        text-decoration: none;
     }
 }
 .phone-box{
@@ -486,10 +488,10 @@ footer{
     }
     .users-page{
         flex-direction: column-reverse;
-        flex-direction: column-reverse;
-        padding: 150px 0;
         display: flex;
-        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 150px 0;
 
     }
     .subscribe-box{
