@@ -56,7 +56,7 @@ header .button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 70px;
+  padding-top: 90px;
   text-align: center;
 }
 .huddle-text-box h1 {
@@ -77,7 +77,7 @@ header .button:hover {
   text-align: center;
 }
 .huddle-text-box .free-button {
-  margin-top: 44px;
+  margin-top: 60px;
 }
 .huddle-text-box .start-button {
   font-size: 20px;
@@ -115,7 +115,7 @@ header .button:hover {
 .diagram-box {
   display: flex;
   justify-content: space-evenly;
-  padding: 70px;
+  padding: 150px;
 }
 .diagram-box .community-diagram {
   display: flex;
@@ -172,7 +172,7 @@ header .button:hover {
 }
 
 .grow-image {
-  max-width: 517px;
+  max-width: 500px;
   height: 423px;
 }
 .grow-image img {
@@ -219,15 +219,11 @@ header .button:hover {
 }
 
 .build-free {
-  padding: 100px 0;
+  padding: 150px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.build-free .build-title {
-  max-width: 344px;
-  width: 100%;
 }
 .build-free .build-title h1 {
   font-size: 40px;
@@ -423,6 +419,9 @@ footer {
     padding: 5px 18px;
     font-size: 10px;
   }
+  .huddle-text-box {
+    padding-top: 20px;
+  }
   .huddle-text-box h1 {
     font-size: 24px;
     line-height: 36px;
@@ -434,17 +433,19 @@ footer {
     font-size: 14px;
     line-height: 21px;
   }
+  .huddle-text-box .free-button {
+    margin-top: 30px;
+  }
   .huddle-text-box .start-button {
     font-size: 12px;
     padding: 11px 40px;
   }
-  .diagram-box {
-    flex-direction: column;
-  }
   .grow-together-page {
     flex-direction: column-reverse;
     justify-content: center;
-    padding: 30px 0;
+    padding: 130px 0;
+    height: unset;
+    min-height: 600px;
   }
   .grow-image {
     max-width: 517px;
@@ -494,7 +495,7 @@ footer {
     margin-top: 16px;
   }
   .second-page {
-    margin-top: 100px;
+    margin-top: 80px;
   }
   .second-page .image-box {
     height: unset;
@@ -505,6 +506,10 @@ footer {
     width: 95%;
     height: 75%;
   }
+  .diagram-box {
+    flex-direction: column;
+    padding: 50px;
+  }
   .diagram-box .community-diagram {
     padding: 47px 0;
   }
@@ -513,6 +518,13 @@ footer {
   }
   .diagram-box .community-diagram span {
     font-size: 60px;
+  }
+  .build-free {
+    padding: 75px 0;
+  }
+  .build-free .build-title {
+    max-width: 344px;
+    width: 100%;
   }
   .build-free .build-title h1 {
     font-size: 24px;
