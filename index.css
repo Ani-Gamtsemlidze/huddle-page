@@ -147,7 +147,7 @@ header .button:hover {
 }
 
 .grow-together-page {
-  background-image: url(./images/Path\ 6.png);
+  background-image: url(./images/Path\ 5.png);
   background-size: cover;
   height: 800px;
   display: flex;
@@ -201,7 +201,7 @@ header .button:hover {
 
 .users-page {
   height: 800px;
-  background-image: url(./images/Path\ 5.png);
+  background-image: url(./images/Path\ 6.png);
   background-size: cover;
   display: flex;
   align-items: center;
@@ -225,7 +225,11 @@ header .button:hover {
   justify-content: center;
   align-items: center;
 }
-.build-free h1 {
+.build-free .build-title {
+  max-width: 344px;
+  width: 100%;
+}
+.build-free .build-title h1 {
   font-size: 40px;
   color: #00252E;
 }
@@ -440,10 +444,11 @@ footer {
   .grow-together-page {
     flex-direction: column-reverse;
     justify-content: center;
+    padding: 30px 0;
   }
   .grow-image {
     max-width: 517px;
-    height: 423px;
+    height: 280px;
     display: flex;
     justify-content: center;
   }
@@ -455,6 +460,7 @@ footer {
   }
   .grow-text-box {
     text-align: center;
+    margin-top: 50px;
   }
   .grow-text-box h3 {
     font-size: 25px;
@@ -467,13 +473,18 @@ footer {
   }
   .conversation-together-page {
     flex-direction: column-reverse;
+    padding: 30px 0;
+    min-height: 600px;
+    height: unset;
   }
   .users-page {
     flex-direction: column-reverse;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 150px 0;
+    padding: 60px 0;
+    min-height: 600px;
+    height: unset;
   }
   .subscribe-box {
     flex-direction: column;
@@ -503,13 +514,14 @@ footer {
   .diagram-box .community-diagram span {
     font-size: 60px;
   }
-  .build-free h1 {
+  .build-free .build-title h1 {
     font-size: 24px;
     text-align: center;
   }
   .build-free .start-button {
     padding: 11px 40px;
     font-size: 12px;
+    margin-top: 24px;
   }
   footer {
     background-image: url(./images/Path\ 4\ Copy.png);
