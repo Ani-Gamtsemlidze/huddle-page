@@ -286,7 +286,6 @@ footer {
   font-size: 16px;
   color: #fff;
   margin-left: 20px;
-  text-decoration: none;
 }
 
 .phone-box {
@@ -333,6 +332,13 @@ footer {
 }
 .social-networks .network-img .social {
   width: 100%;
+}
+
+.mobile-number {
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #fff;
 }
 
 .newsletter-box h2 {
@@ -554,11 +560,16 @@ footer {
   }
   .contact-info span {
     font-size: 14px;
-    text-decoration: unset;
     margin-left: 13px;
   }
   .social-networks .network-img {
     max-width: 23px;
     margin: 35px 20px 15px 0px;
+  }
+  .mobile-number {
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 13px;
+    color: #fff;
   }
 }/*# sourceMappingURL=index.css.map */
